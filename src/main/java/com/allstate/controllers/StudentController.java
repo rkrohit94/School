@@ -3,14 +3,8 @@ package com.allstate.controllers;
 import com.allstate.entities.Student;
 import com.allstate.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by localadmin on 30/01/17.
- */
 @RestController
 @RequestMapping(value = "/student")
 public class StudentController {
@@ -29,6 +23,16 @@ public class StudentController {
     @RequestMapping(value = "" , method = RequestMethod.GET)
     public Iterable<Student> findAllStudent(){
         return this.service.findAllStudent();
+    }
+
+    @RequestMapping(value = "/id/{id}" , method = RequestMethod.GET)
+    public Student findStudentById(@PathVariable int id){
+        return this.service.findStudentById(id);
+    }
+
+    @RequestMapping(value = "/email/{email}" , method = RequestMethod.GET)
+    public Student findStudentByEmail(@PathVariable String email){
+        return this.service.findStudentByEmail(email);
     }
 
 }

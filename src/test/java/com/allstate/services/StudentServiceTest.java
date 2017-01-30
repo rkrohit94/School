@@ -31,7 +31,7 @@ public class StudentServiceTest {
 
     @Test
     public void shouldFindStudentById() throws Exception{
-        Student student = this.service.findStudenById(1);
+        Student student = this.service.findStudentById(1);
         assertNotNull(student);
         assertEquals("aaa@aol.com",student.getEmail());
     }

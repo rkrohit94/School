@@ -23,7 +23,7 @@ public class StudentService {
     public Iterable<Student> findAllStudent(){
        return this.repository.findAll();
     }
-    public Student findStudenById(int id){
+    public Student findStudentById(int id){
         return this.repository.findOne(id);
     }
     public  Student findStudentByEmail(String email){

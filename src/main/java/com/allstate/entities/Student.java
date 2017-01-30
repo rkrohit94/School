@@ -1,5 +1,6 @@
-package com.allstate;
+package com.allstate.entities;
 
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -9,6 +10,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "students")
+@Data
 public class Student {
     private int id;
     private int version;

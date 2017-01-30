@@ -33,7 +33,6 @@ public class Klass {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -42,7 +41,6 @@ public class Klass {
     public int getVersion() {
         return version;
     }
-
     public void setVersion(int version) {
         this.version = version;
     }
@@ -51,7 +49,6 @@ public class Klass {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -60,7 +57,6 @@ public class Klass {
     public Date getSemester() {
         return semester;
     }
-
     public void setSemester(Date semester) {
         this.semester = semester;
     }
@@ -69,7 +65,6 @@ public class Klass {
     public int getCredits() {
         return credits;
     }
-
     public void setCredits(int credits) {
         this.credits = credits;
     }
@@ -78,7 +73,6 @@ public class Klass {
     public double getFee() {
         return fee;
     }
-
     public void setFee(double fee) {
         this.fee = fee;
     }
@@ -89,7 +83,6 @@ public class Klass {
     public Department getDepartment() {
         return department;
     }
-
     public void setDepartment(Department department) {
         this.department = department;
     }
@@ -98,7 +91,6 @@ public class Klass {
     public Date getCreated() {
         return created;
     }
-
     public void setCreated(Date created) {
         this.created = created;
     }
@@ -108,7 +100,6 @@ public class Klass {
     public Date getModified() {
         return modified;
     }
-
     public void setModified(Date modified) {
         this.modified = modified;
     }

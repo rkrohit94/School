@@ -11,8 +11,5 @@ public interface IKlassRepository extends CrudRepository<Klass, Integer> {
 
     Klass findByName(String name);
 
-    String sql1 = "select * from klasses where teacher_id = ?1";
-    @Query(value = sql1, nativeQuery = true)
-    List<Klass> findAllKlassesOfTeacher(int teacherId);
 
 }

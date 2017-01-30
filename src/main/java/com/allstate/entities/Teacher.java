@@ -19,7 +19,7 @@ public class Teacher {
     private int version;
     private String name;
     private int age;
-    private Gender sex;
+    private Gender gender;
     private Date created;
     private Date modified;
     private List<Klass> klasses;
@@ -29,7 +29,6 @@ public class Teacher {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -38,7 +37,6 @@ public class Teacher {
     public int getVersion() {
         return version;
     }
-
     public void setVersion(int version) {
         this.version = version;
     }
@@ -47,7 +45,6 @@ public class Teacher {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -56,7 +53,6 @@ public class Teacher {
     public int getAge() {
         return age;
     }
-
     public void setAge(int age) {
         this.age = age;
     }
@@ -64,19 +60,17 @@ public class Teacher {
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "ENUM('MALE','FEMALE')")
-    public Gender getSex() {
-        return sex;
+    public Gender getGender() {
+        return gender;
     }
-
-    public void setSex(Gender sex) {
-        this.sex = sex;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     @CreationTimestamp
     public Date getCreated() {
         return created;
     }
-
     public void setCreated(Date created) {
         this.created = created;
     }
@@ -85,10 +79,10 @@ public class Teacher {
     public Date getModified() {
         return modified;
     }
-
     public void setModified(Date modified) {
         this.modified = modified;
     }
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "teacher")
     @JsonIgnore
     public List<Klass> getKlasses() {

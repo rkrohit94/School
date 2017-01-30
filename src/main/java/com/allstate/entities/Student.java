@@ -23,7 +23,6 @@ public class Student {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -32,7 +31,6 @@ public class Student {
     public int getVersion() {
         return version;
     }
-
     public void setVersion(int version) {
         this.version = version;
     }
@@ -41,7 +39,6 @@ public class Student {
     public Date getCreated() {
         return created;
     }
-
     public void setCreated(Date created) {
         this.created = created;
     }
@@ -50,7 +47,6 @@ public class Student {
     public Date getModified() {
         return modified;
     }
-
     public void setModified(Date modified) {
         this.modified = modified;
     }

@@ -33,7 +33,6 @@ public class KlassService {
     public  Klass findKlassByName(String name){
         return this.repository.findByName(name);
     }
-    public List<Klass> findKlassOfTeacher(int teacherId){
-        return this.repository.findAllKlassesOfTeacher(teacherId);
-    }
+
+
 }
